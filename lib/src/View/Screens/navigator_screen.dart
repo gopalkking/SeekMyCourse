@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/profile_screen.dart';
-import 'package:seek_my_course/src/View/Screens/generate_course.dart';
+import 'package:seek_my_course/src/View/Screens/Generate%20Course/generate_course.dart';
 import 'package:seek_my_course/src/View/Screens/home_screen.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 
