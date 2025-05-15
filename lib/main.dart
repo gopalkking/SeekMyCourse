@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       theme:AppTheme.lightTheme,  
-       getPages: AppRoutes.appRoutes(),
-        defaultTransition: Transition.leftToRightWithFade,
-      home: NavigatorScreen(index: 0),
+      getPages: AppRoutes.appRoutes(),
+      defaultTransition: Transition.leftToRightWithFade,
+      home: NavigatorScreen(index: 1),
     );
   }
 }
