@@ -19,21 +19,16 @@ class CustomOutlineButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onPressed,
-      child: Container(
-        height: height,
-        width: width,
-        decoration: BoxDecoration(border: Border.all(color: color)),
-        child: Center(
-          child: Text(
-            text,
-            style: Theme.of(
-              context,
-            ).textTheme.titleLarge!.copyWith(color: textcolor, fontSize: 20),
-          ),
-        ),
-      ),
+    return  SizedBox(
+      height: height,
+      width: width,
+      child: OutlinedButton(onPressed: onPressed,  style: OutlinedButton.styleFrom(
+            padding: const EdgeInsets.all(8),
+            shape: RoundedRectangleBorder(),
+            side: BorderSide(color: color),
+          ) ,child: Text(text,style: Theme.of(context).textTheme.titleLarge!.copyWith(
+            color: textcolor,fontSize: 16
+          ),)),
     );
   }
 }

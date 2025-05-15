@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:seek_my_course/src/View/Routes/route_name.dart';
+import 'package:seek_my_course/src/View/Screens/navigator_screen.dart';
+import 'package:seek_my_course/src/View/Utilies/colors.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
 import 'package:seek_my_course/src/View/Widget/custom_outline_button.dart';
@@ -20,16 +22,16 @@ class _GenerateCourseState extends State<GenerateCourse> {
     ThemeData theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Color(AppColors.lightBlack),
         title: Text("Course Topic Name",style: theme.textTheme.titleSmall,),
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(16),
+        padding: EdgeInsets.all(18),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(child: Text("Generate Course",style: theme.textTheme.titleLarge,)),
-            16.vspace,
+            32.vspace,
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -50,26 +52,29 @@ class _GenerateCourseState extends State<GenerateCourse> {
                 CircleAvatar(backgroundColor: Colors.white,radius: 20,child: Text("3",style: theme.textTheme.bodySmall,),),
               ],
             ),
-            16.vspace,
+            40.vspace,
             Row(
+               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Ignite Your Curiosity:",style: theme.textTheme.bodyMedium!.copyWith(color: theme.splashColor),),
                 8.hspace,
                 Text("What Do You Want to \nLearn?",style: theme.textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.bold),),
               ],
             ),
-            16.vspace,
+            8.vspace,
             Text("“Define your learning focus. Input the topic you wish to study, and we will generate a course that is customized to your needs. You are in control of your learning.”",style: theme.textTheme.bodySmall!.copyWith(color: Colors.white),textAlign: TextAlign.center),
-            20.vspace,
+            32.vspace,
             Text("Enter Your Topic Name",style: theme.textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.bold),),
             8.vspace,
             TextFormWidget(hintText: "Type here...", textEditingController: topicName, color:  Colors.grey.shade800, fillColor: Colors.white),
-            64.vspace,
-             Center(
-               child: CustomButton(onPressed: () {
-                 Get.toNamed(Appnames.generateCourseNoOfSubtopic);
-               },text: "Next", width: context.width/3, height: context.height/17, color: theme.splashColor,textcolor: Colors.black,),
-             )
+            SizedBox(height: context.height/14,),
+             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+               CustomOutlineButton(onPressed: (){  Get.to(NavigatorScreen(index: 0));},text: "Back", width: context.width/3, height: context.height/17, color: Colors.white),
+               CustomButton(onPressed: (){Get.toNamed(Appnames.generateCourseNoOfSubtopic);},text: "Next", width: context.width/3, height: context.height/17, color: theme.splashColor,textcolor: Colors.black,)
+              ],
+            )
           ],
         ),
       ),

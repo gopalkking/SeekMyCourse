@@ -20,7 +20,7 @@ class TextFormWidget extends StatelessWidget {
       decoration:InputDecoration(
          filled: true,
         fillColor: Colors.white,
-        contentPadding: const EdgeInsets.all(8),
+        contentPadding: const EdgeInsets.all(16),
         border: InputBorder.none,
         hintText: hintText,
         hintStyle: Theme.of(context).textTheme.labelLarge!.copyWith(
