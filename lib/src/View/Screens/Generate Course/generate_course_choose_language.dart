@@ -67,9 +67,8 @@ class _GenerateCourseChooseLanguageState extends State<GenerateCourseChooseLangu
             Text("Course Language",style: theme.textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.bold),),
             8.vspace,
             Container(
-             width: context.width/1, height: context.height/12,
-             padding: EdgeInsets.symmetric(horizontal: 16),
-             decoration: BoxDecoration(color: Colors.white),
+             padding: EdgeInsets.symmetric(horizontal: 12),
+             color: Colors.white,
              child: Row(
               children: [
                 Image.asset(AppImages.indiaFlag),
@@ -79,7 +78,7 @@ class _GenerateCourseChooseLanguageState extends State<GenerateCourseChooseLangu
                             child: CustomDropdown(
                                 labeltext: 'Choose your Language',
                                 borderColor: Colors.white,
-                                labelColor: Colors.grey.shade800,
+                                labelColor: Color(0xff000000),
                                 value: selectedLanguage,
                                 onChanged: (newValue) {
                                   setState(() {

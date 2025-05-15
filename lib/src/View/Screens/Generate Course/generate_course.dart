@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:seek_my_course/src/View/Routes/route_name.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
-import 'package:seek_my_course/src/View/Widget/custom_outline_button.dart';
 import 'package:seek_my_course/src/View/Widget/textformfield_widget.dart';
 
 class GenerateCourse extends StatefulWidget {
@@ -20,7 +19,7 @@ class _GenerateCourseState extends State<GenerateCourse> {
     ThemeData theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Color(0xff1D1D1D),
         title: Text("Course Topic Name",style: theme.textTheme.titleSmall,),
       ),
       body: SingleChildScrollView(
@@ -52,6 +51,7 @@ class _GenerateCourseState extends State<GenerateCourse> {
             ),
             16.vspace,
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Ignite Your Curiosity:",style: theme.textTheme.bodyMedium!.copyWith(color: theme.splashColor),),
                 8.hspace,
@@ -60,7 +60,7 @@ class _GenerateCourseState extends State<GenerateCourse> {
             ),
             16.vspace,
             Text("“Define your learning focus. Input the topic you wish to study, and we will generate a course that is customized to your needs. You are in control of your learning.”",style: theme.textTheme.bodySmall!.copyWith(color: Colors.white),textAlign: TextAlign.center),
-            20.vspace,
+            24.vspace,
             Text("Enter Your Topic Name",style: theme.textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.bold),),
             8.vspace,
             TextFormWidget(hintText: "Type here...", textEditingController: topicName, color:  Colors.grey.shade800, fillColor: Colors.white),
@@ -69,7 +69,8 @@ class _GenerateCourseState extends State<GenerateCourse> {
                child: CustomButton(onPressed: () {
                  Get.toNamed(Appnames.generateCourseNoOfSubtopic);
                },text: "Next", width: context.width/3, height: context.height/17, color: theme.splashColor,textcolor: Colors.black,),
-             )
+             ),
+            
           ],
         ),
       ),
