@@ -10,7 +10,11 @@ class AppImages{
  static const String logo = 'assets/images/logo.png';
  static const String group = 'assets/images/group.png';
  static const String robot = 'assets/images/robot.png';
- 
-
+ static const String aichat = 'assets/images/aichat.png';
+ static const String notepad = 'assets/images/notepad.png';
+ static const String tick= 'assets/images/tick.png';
+ static const String chatIcon= 'assets/images/chatIcon.png';
+ static const String pencil = 'assets/images/pencil.png';
+ static const String won= 'assets/images/won.png';
  
 }

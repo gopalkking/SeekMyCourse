@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:seek_my_course/src/View/Routes/route_name.dart';
+import 'package:seek_my_course/src/View/Utilies/colors.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
+import 'package:seek_my_course/src/View/Widget/common_appbar_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
 import 'package:seek_my_course/src/View/Widget/custom_dropdown.dart';
 import 'package:seek_my_course/src/View/Widget/custom_outline_button.dart';
@@ -21,18 +24,14 @@ class _GenerateCourseChooseLanguageState extends State<GenerateCourseChooseLangu
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        leading: IconButton(onPressed: (){Get.back();}, icon: Icon(Icons.arrow_back_ios,color: Colors.white,)),
-        title: Text("Choose Language",style: theme.textTheme.titleSmall,),
-      ),
+      appBar:CommonAppbarWidget(text: "Choose Language",onPressed: (){Get.back();},),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(child: Text("Generate Course",style: theme.textTheme.titleLarge,)),
-            16.vspace,
+            32.vspace,
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -46,24 +45,25 @@ class _GenerateCourseChooseLanguageState extends State<GenerateCourseChooseLangu
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 8.hspace,
-                CircleAvatar(backgroundColor: theme.splashColor,radius: 20,child: Text("1",style: theme.textTheme.bodySmall,),),
+                InkWell(onTap: (){Get.toNamed(Appnames.generateCourse);},child: CircleAvatar(backgroundColor: theme.splashColor,radius: 20,child: Text("1",style: theme.textTheme.bodySmall,),)),
                 SizedBox(width: context.width/3.5,child: Divider(color: Colors.white,)),
-                CircleAvatar(backgroundColor: theme.splashColor,radius: 20,child: Text("2",style: theme.textTheme.bodySmall,),),
+                InkWell(onTap: (){Get.toNamed(Appnames.generateCourseNoOfSubtopic);},child: CircleAvatar(backgroundColor: theme.splashColor,radius: 20,child: Text("2",style: theme.textTheme.bodySmall,),)),
                 SizedBox(width: context.width/3.5,child: Divider(color: Colors.white,)),
                 CircleAvatar(backgroundColor: theme.splashColor,radius: 20,child: Text("3",style: theme.textTheme.bodySmall,),),
               ],
             ),
-            16.vspace,
+            40.vspace,
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Speak Your Language:",style: theme.textTheme.bodyMedium!.copyWith(color: theme.splashColor),),
                 8.hspace,
                 Text("Select Your Course \nLanguage.",style: theme.textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.bold),),
               ],
             ),
-            16.vspace,
+            32.vspace,
             Text("“Personalize your learning experience by choosing your course language. We’ll generate content that aligns with your linguistic preferences.”",style: theme.textTheme.bodySmall!.copyWith(color: Colors.white),textAlign: TextAlign.center),
-            20.vspace,
+            32.vspace,
             Text("Course Language",style: theme.textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.bold),),
             8.vspace,
             Container(
@@ -78,7 +78,7 @@ class _GenerateCourseChooseLanguageState extends State<GenerateCourseChooseLangu
                             child: CustomDropdown(
                                 labeltext: 'Choose your Language',
                                 borderColor: Colors.white,
-                                labelColor: Color(0xff000000),
+                                labelColor: Color(AppColors.lightBlack),
                                 value: selectedLanguage,
                                 onChanged: (newValue) {
                                   setState(() {
@@ -89,12 +89,12 @@ class _GenerateCourseChooseLanguageState extends State<GenerateCourseChooseLangu
               ],
              ),
             ),
-            64.vspace,
+             SizedBox(height: context.height/14,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                CustomOutlineButton(onPressed: (){Get.back();},text: "Back", width: context.width/3, height: context.height/17, color: Colors.white),
-                CustomButton(onPressed: (){},text: "Next", width: context.width/3, height: context.height/17, color: theme.splashColor,textcolor: Colors.black,)
+                CustomButton(onPressed: (){Get.toNamed(Appnames.generateCourseChooseTopicName);},text: "Next", width: context.width/3, height: context.height/17, color: theme.splashColor,textcolor: Colors.black,)
               ],
             )
           ],
