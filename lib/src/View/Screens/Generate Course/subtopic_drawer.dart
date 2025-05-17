@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:seek_my_course/src/View/Routes/route_name.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 
 class SubtopicDrawer extends StatefulWidget {
@@ -81,7 +82,7 @@ class _SubtopicDrawerState extends State<SubtopicDrawer> {
             const Divider(color: Colors.white, thickness: 2),
             Padding(
               padding: const EdgeInsets.all(16),
-              child: InkWell(onTap:(){},child:Text("Start Quiz", style: theme.textTheme.bodyLarge)),
+              child: InkWell(onTap:(){Get.toNamed(Appnames.quizScreen);},child:Text("Start Quiz", style: theme.textTheme.bodyLarge)),
             ),
             const Divider(color: Colors.white, thickness: 2),
           ],

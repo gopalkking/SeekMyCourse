@@ -6,6 +6,10 @@ class Appnames {
   static const String generateCourseChooseLanguage = '/generateCourseChooseLanguage';
   static const String generateCourseChooseTopicName = '/generateCourseChooseTopicName';
   static const String generateCourseShow = '/generateCourseShow';
+  static const String aiNotesScreen = '/aiNotesScreen';
+  static const String aiChatScreen = '/aiChatScreen';
+  static const String quizScreen = '/quizScreen';
+  static const String quizCompleted = '/quizCompleted';
 
   
 }
