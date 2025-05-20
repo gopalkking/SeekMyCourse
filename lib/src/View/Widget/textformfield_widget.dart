@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class TextFormWidget extends StatelessWidget {
   final String hintText;
   final Color color;
-  final Color fillColor;
+  final Color? fillColor;
   final TextEditingController textEditingController;
   final AutovalidateMode? autovalidateMode;
    final String? Function(String?)? validator;
-  const TextFormWidget({super.key, required this.hintText, required this.textEditingController, required this.color, required this.fillColor, this.validator, this.autovalidateMode});
+  const TextFormWidget({super.key, required this.hintText, required this.textEditingController, required this.color, this.fillColor, this.validator, this.autovalidateMode});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class TextFormWidget extends StatelessWidget {
         autovalidateMode: autovalidateMode,
       decoration:InputDecoration(
          filled: true,
-        fillColor: Colors.white,
+        fillColor:fillColor?? Colors.white,
         contentPadding: const EdgeInsets.all(16),
         border: InputBorder.none,
         hintText: hintText,

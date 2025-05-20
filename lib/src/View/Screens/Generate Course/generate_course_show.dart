@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:seek_my_course/src/View/Routes/route_name.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/subtopic_drawer.dart';
-import 'package:seek_my_course/src/View/Utilies/colors.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/common_appbar_widget.dart';

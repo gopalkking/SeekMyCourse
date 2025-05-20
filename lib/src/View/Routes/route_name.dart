@@ -14,6 +14,10 @@ class Appnames {
   static const String aiChatScreen = '/aiChatScreen';
   static const String quizScreen = '/quizScreen';
   static const String quizCompleted = '/quizCompleted';
+  static const String referralDashboard = '/referralDashboard';
+  static const String bankDetail = '/bankDetail';
+  static const String addBankDetails = '/addBankDetails';
+  static const String payOut = '/payOut';
 
   
 }
