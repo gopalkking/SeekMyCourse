@@ -18,6 +18,8 @@ class Appnames {
   static const String bankDetail = '/bankDetail';
   static const String addBankDetails = '/addBankDetails';
   static const String payOut = '/payOut';
+  static const String referralProgram = '/referralProgram';
+  static const String notification = '/notification';
 
   
 }

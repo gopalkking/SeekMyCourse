@@ -97,7 +97,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ProfileWidget(text: "My Study Group",onPressed: (){},),
                       ProfileWidget(text: "Refer & Earn",onPressed: (){Get.toNamed(Appnames.referralDashboard);},),
                       ProfileWidget(text: "Help & Support",onPressed: (){},),
-                      ProfileWidget(text: "Notification",onPressed: (){},rightArrow: false,),
+                      ProfileWidget(text: "Notification",onPressed: (){Get.toNamed(Appnames.notification);},rightArrow: false,),
                       ProfileWidget(text: "Terms & Condition",onPressed: (){},rightArrow: false,),
                       ProfileWidget(text: "Logout",onPressed: (){alertBoxLogout(context);},rightArrow: false,),
                       ProfileWidget(text: "Delete Account",onPressed: (){alertBoxDeleteAccount(context);},rightArrow: false,),
