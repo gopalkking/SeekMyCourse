@@ -19,21 +19,16 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onPressed,
-      child: Container(
-        height: height,
-        width: width,
-        decoration: BoxDecoration(color: color),
-        child: Center(
-          child: Text(
-            text,
-            style: Theme.of(
-              context,
-            ).textTheme.titleLarge!.copyWith(color: textcolor, fontSize: 20),
-          ),
-        ),
-      ),
+    return  SizedBox(
+      height: height,
+      width: width,
+      child: ElevatedButton(onPressed: onPressed,  style: ElevatedButton.styleFrom(
+            padding: const EdgeInsets.all(8),
+            shape: RoundedRectangleBorder(),
+            backgroundColor: color
+          ) ,child: Text(text,style: Theme.of(context).textTheme.titleLarge!.copyWith(
+            color: textcolor,fontSize: 16
+          ),)),
     );
   }
 }
