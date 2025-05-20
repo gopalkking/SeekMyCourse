@@ -6,12 +6,16 @@ import 'package:seek_my_course/src/View/Screens/Generate%20Course/generate_cours
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/generate_course_choose_language.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/generate_course_choose_topic_name.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/generate_course_no_of_subtopic.dart';
+import 'package:seek_my_course/src/View/Screens/Onboard/login_otp_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Onboard/login_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Onboard/onboarding_screen.dart';
+import 'package:seek_my_course/src/View/Screens/Onboard/signup_otp_screen.dart';
+import 'package:seek_my_course/src/View/Screens/Onboard/signup_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Onboard/splash_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/generate_course_show.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/quiz_completed.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/quiz_screen.dart';
+import 'package:seek_my_course/src/View/Screens/Onboard/subscriptions.dart';
 import 'package:seek_my_course/src/View/Screens/home_screen.dart';
 
 
@@ -28,6 +32,26 @@ class AppRoutes {
     GetPage(
       name: Appnames.loginScreen, 
       page: ()=> const LoginScreen(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade),
+    GetPage(
+      name: Appnames.loginotp, 
+      page: ()=> const LoginOTPScreen(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade),
+      GetPage(
+      name: Appnames.signupScreen, 
+      page: ()=> const SignupScreen(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade),
+    GetPage(
+      name: Appnames.signupOtp, 
+      page: ()=> const SignOTPScreen(),
+      transitionDuration: Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade),
+     GetPage(
+      name: Appnames.subscription, 
+      page: ()=> const SubscriptionPlans(),
       transitionDuration: Duration(milliseconds: 250),
       transition: Transition.leftToRightWithFade),
     GetPage(

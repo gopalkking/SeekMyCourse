@@ -3,6 +3,10 @@ class Appnames {
   static const String splashScreen = '/splashScreen';
   static const String onboardScreen = '/onboardScreen';
   static const String loginScreen = '/loginScreen';
+  static const String loginotp = '/loginOtp';
+  static const String signupScreen = '/signupScreen';
+  static const String signupOtp ='/signupOtp';
+  static const String subscription = '/subscriptions';
   static const String registerScreen = '/registerScreen';
   static const String home = '/home';
   static const String generateCourse = '/generateCourse';

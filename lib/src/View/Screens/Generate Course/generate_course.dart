@@ -5,6 +5,7 @@ import 'package:seek_my_course/src/View/Screens/navigator_screen.dart';
 import 'package:seek_my_course/src/View/Utilies/colors.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
+import 'package:seek_my_course/src/View/Widget/custom_outline_button.dart';
 import 'package:seek_my_course/src/View/Widget/textformfield_widget.dart';
 
 class GenerateCourse extends StatefulWidget {
