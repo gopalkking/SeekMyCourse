@@ -8,7 +8,6 @@ import 'package:seek_my_course/src/View/Utilies/images.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/common_appbar_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
-import 'package:seek_my_course/src/View/Widget/custom_outline_button.dart';
 import 'package:seek_my_course/src/View/Widget/dialog_widget.dart';
 import 'package:seek_my_course/src/View/Widget/profile_widget.dart';
 
@@ -91,7 +90,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     color: Color(AppColors.lightBlack),
                     child: Column(
                       children: [
-                      ProfileWidget(text: "Edit Profile",onPressed: (){},),
+                      ProfileWidget(text: "Edit Profile",onPressed: (){Get.toNamed(Appnames.editProfile);},),
                       ProfileWidget(text: "My Course",onPressed: (){},),
                       ProfileWidget(text: "My Certificate",onPressed: (){},),
                       ProfileWidget(text: "My Study Group",onPressed: (){},),
