@@ -17,5 +17,16 @@ class AppImages{
  static const String pencil = 'assets/images/pencil.png';
  static const String won= 'assets/images/won.png';
  static const String done = 'assets/images/done.png';
- 
+ static const String photo= 'assets/images/photo.png';
+ static const String arrowRight= 'assets/images/arrow_right.png';
+ static const String settings= 'assets/images/settings.png';
+ static const String totalReferrals= 'assets/images/total_referrals.png';
+ static const String totalUsers= 'assets/images/total_Users.png';
+ static const String totalEarnings= 'assets/images/total_earnings.png';
+ static const String pdf= 'assets/images/pdf.png';
+ static const String excel = 'assets/images/excel.png';
+ static const String filter = 'assets/images/filter.png';
+ static const String morpheus = 'assets/images/morpheus.png';
+ static const String morpheusCode = 'assets/images/morpheus_code.png';
+ static const String file = 'assets/images/file.png';
 }

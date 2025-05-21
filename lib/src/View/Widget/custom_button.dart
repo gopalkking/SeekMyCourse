@@ -6,6 +6,7 @@ class CustomButton extends StatelessWidget {
   final double height;
   final Color color;
   final Function()? onPressed;
+  final double? textsize;
   final Color? textcolor;
   const CustomButton({
     super.key,
@@ -14,7 +15,7 @@ class CustomButton extends StatelessWidget {
     required this.height,
     required this.color,
     this.onPressed,
-    this.textcolor,
+    this.textcolor, this.textsize,
   });
 
   @override
@@ -27,8 +28,8 @@ class CustomButton extends StatelessWidget {
             shape: RoundedRectangleBorder(),
             backgroundColor: color
           ) ,child: Text(text,style: Theme.of(context).textTheme.titleLarge!.copyWith(
-            color: textcolor,fontSize: 16
-          ),)),
+            color: textcolor,fontSize: textsize??16
+          ),textAlign: TextAlign.center,)),
     );
   }
 }

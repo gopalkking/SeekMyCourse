@@ -7,6 +7,7 @@ class CustomOutlineButton extends StatelessWidget {
   final Color color;
   final Function()? onPressed;
   final Color? textcolor;
+  final double? textSize;
   const CustomOutlineButton({
     super.key,
     required this.text,
@@ -14,7 +15,7 @@ class CustomOutlineButton extends StatelessWidget {
     required this.height,
     required this.color,
     this.onPressed,
-    this.textcolor,
+    this.textcolor, this.textSize,
   });
 
   @override
@@ -27,7 +28,7 @@ class CustomOutlineButton extends StatelessWidget {
             shape: RoundedRectangleBorder(),
             side: BorderSide(color: color),
           ) ,child: Text(text,style: Theme.of(context).textTheme.titleLarge!.copyWith(
-            color: textcolor,fontSize: 16
+            color: textcolor,fontSize: textSize??16
           ),)),
     );
   }

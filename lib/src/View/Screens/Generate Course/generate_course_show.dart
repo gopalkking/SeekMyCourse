@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:seek_my_course/src/View/Routes/route_name.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/subtopic_drawer.dart';
-import 'package:seek_my_course/src/View/Utilies/colors.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
+import 'package:seek_my_course/src/View/Widget/common_appbar_widget.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class GenerateCourseShow extends StatefulWidget {
@@ -24,12 +24,8 @@ class _GenerateCourseShowState extends State<GenerateCourseShow> {
     
     return Scaffold(
       key: _scaffoldKey,
-       appBar: AppBar(
-        backgroundColor: Color(AppColors.lightBlack),
-        title: Text("Generate Course",style: theme.textTheme.titleSmall,),
-        leading: IconButton(onPressed: (){Get.back();}, icon: Icon(Icons.arrow_back_ios,color: Colors.white,)),
-        actions: [
-          InkWell(onTap: (){
+       appBar: CommonAppbarWidget(text: "Generate Course",onPressed: (){Get.back();},action: [
+        InkWell(onTap: (){
                 _scaffoldKey.currentState?.openEndDrawer();
           },child: Column(
              mainAxisAlignment: MainAxisAlignment.center,
@@ -37,8 +33,7 @@ class _GenerateCourseShowState extends State<GenerateCourseShow> {
             Icon(Icons.menu,color: Colors.white,),
             Text("View Subtopics ",style: theme.textTheme.bodySmall!.copyWith(color: Colors.white,fontSize: 10),)
           ],),)
-        ],
-      ),
+       ],),
       endDrawer: SubtopicDrawer(),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),

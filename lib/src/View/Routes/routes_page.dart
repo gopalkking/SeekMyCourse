@@ -16,6 +16,13 @@ import 'package:seek_my_course/src/View/Screens/Generate%20Course/generate_cours
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/quiz_completed.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/quiz_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Onboard/subscriptions.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/add_bank_details.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/bank_detail.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/payout_screen.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/referral_dashboard.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/referral_program.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/edit_profile.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/notification.dart';
 import 'package:seek_my_course/src/View/Screens/home_screen.dart';
 
 
@@ -111,6 +118,48 @@ class AppRoutes {
     GetPage(
       name: Appnames.quizCompleted, 
       page: () =>const QuizCompleted(),
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.referralDashboard, 
+      page: () =>const ReferralDashboard(),
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.bankDetail, 
+      page: () =>const BankDetail(),
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.addBankDetails, 
+      page: () =>const AddBankDetails(),
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.payOut, 
+      page: () =>const PayoutScreen(),
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.referralProgram, 
+      page: () =>const ReferralProgram(),
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.notification, 
+      page: () =>const Notification(),
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.editProfile, 
+      page: () =>const EditProfile() ,
       transitionDuration: const Duration(milliseconds: 250),
       transition: Transition.leftToRightWithFade
       ),
