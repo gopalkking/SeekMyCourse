@@ -16,5 +16,6 @@ class AppImages{
  static const String chatIcon= 'assets/images/chatIcon.png';
  static const String pencil = 'assets/images/pencil.png';
  static const String won= 'assets/images/won.png';
+ static const String done = 'assets/images/done.png';
  
 }
