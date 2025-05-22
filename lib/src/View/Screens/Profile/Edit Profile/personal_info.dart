@@ -26,107 +26,105 @@ class _PersonalInfoState extends State<PersonalInfo> {
     TextEditingController phoneotp = TextEditingController();
     TextEditingController emailotp = TextEditingController();
     final focusNode = FocusNode();
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          Container(
-            color: Color(AppColors.lightBlack),
-            padding: EdgeInsets.all(18),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                IntrinsicHeight(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SizedBox(
-                        width: 150,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "First Name",
-                              style: theme.textTheme.bodySmall!.copyWith(
-                                color: Colors.white,
-                              ),
+    return Column(
+      children: [
+        Container(
+          color: Color(AppColors.lightBlack),
+          padding: EdgeInsets.all(18),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              IntrinsicHeight(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SizedBox(
+                      width: 150,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "First Name",
+                            style: theme.textTheme.bodySmall!.copyWith(
+                              color: Colors.white,
                             ),
-                            PersonalInfoTextformfield(
-                              textEditingController: firstname,
-                            ),
-                            24.vspace,
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Email",
-                                  style: theme.textTheme.bodySmall!.copyWith(
-                                    color: Colors.white,
-                                  ),
+                          ),
+                          PersonalInfoTextformfield(
+                            textEditingController: firstname,
+                          ),
+                          24.vspace,
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Email",
+                                style: theme.textTheme.bodySmall!.copyWith(
+                                  color: Colors.white,
                                 ),
-                               CustomEditButton(onPressed: (){alertBoxEmailEdit(context, email,emailotp,focusNode);})
-                              ],
-                            ),
-                            PersonalInfoTextformfield(
-                              textEditingController: firstname,
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 160,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "Last Name",
-                              style: theme.textTheme.bodySmall!.copyWith(
-                                color: Colors.white,
                               ),
-                            ),
-                            PersonalInfoTextformfield(
-                              textEditingController: lastname,
-                            ),
-                            24.vspace,
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text(
-                                  "Phone",
-                                  style: theme.textTheme.bodySmall!.copyWith(
-                                    color: Colors.white,
-                                  ),
-                                ),
-                               CustomEditButton(onPressed: () {alertBoxPhoneEdit(context, phone,phoneotp,focusNode);})
-                              ],
-                            ),
-                            PersonalInfoPhoneField(
-                              textEditingController: phone,
-                            ),
-                          ],
-                        ),
+                             CustomEditButton(onPressed: (){alertBoxEmailEdit(context, email,emailotp,focusNode);})
+                            ],
+                          ),
+                          PersonalInfoTextformfield(
+                            textEditingController: firstname,
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                    SizedBox(
+                      width: 160,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Last Name",
+                            style: theme.textTheme.bodySmall!.copyWith(
+                              color: Colors.white,
+                            ),
+                          ),
+                          PersonalInfoTextformfield(
+                            textEditingController: lastname,
+                          ),
+                          24.vspace,
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Phone",
+                                style: theme.textTheme.bodySmall!.copyWith(
+                                  color: Colors.white,
+                                ),
+                              ),
+                             CustomEditButton(onPressed: () {alertBoxPhoneEdit(context, phone,phoneotp,focusNode);})
+                            ],
+                          ),
+                          PersonalInfoPhoneField(
+                            textEditingController: phone,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
-                24.vspace,
-                Text(
-                  "Date of Birth",
-                  style: theme.textTheme.bodySmall!.copyWith(
-                    color: Colors.white,
-                  ),
+              ),
+              24.vspace,
+              Text(
+                "Date of Birth",
+                style: theme.textTheme.bodySmall!.copyWith(
+                  color: Colors.white,
                 ),
-                SizedBox(
-                  width: 160,
-                  child: PersonalInfoTextformfield(
-                    textEditingController: firstname,
-                  ),
+              ),
+              SizedBox(
+                width: 160,
+                child: PersonalInfoTextformfield(
+                  textEditingController: firstname,
                 ),
-                8.vspace
-              ],
-            ),
+              ),
+              8.vspace
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
   alertBoxPhoneEdit(BuildContext context,TextEditingController textEditingController,TextEditingController otpcontroller,FocusNode focusNode) {

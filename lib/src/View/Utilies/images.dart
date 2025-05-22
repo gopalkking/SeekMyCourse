@@ -29,4 +29,5 @@ class AppImages{
  static const String morpheus = 'assets/images/morpheus.png';
  static const String morpheusCode = 'assets/images/morpheus_code.png';
  static const String file = 'assets/images/file.png';
+ static const String subscription = 'assets/images/subscription.png';
 }

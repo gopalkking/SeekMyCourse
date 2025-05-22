@@ -24,7 +24,7 @@ dependencies:
   intl: ^0.20.2
   percent_indicator: ^4.2.5
   url_launcher: ^6.3.1
-  intl_phone_field: ^3.2.0
+
 
 dev_dependencies:
   flutter_test:

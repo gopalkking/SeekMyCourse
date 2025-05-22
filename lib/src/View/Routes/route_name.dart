@@ -25,6 +25,7 @@ class Appnames {
   static const String referralProgram = '/referralProgram';
   static const String notification = '/notification';
   static const String editProfile = '/editProfile';
+  static const String subscriptionInvoice = '/subscriptionInvoice';
 
   
 }

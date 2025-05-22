@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class TextFormWidget extends StatelessWidget {
   final String hintText;
-  final Color color;
+  final Color? color;
   final Color? fillColor;
   final TextEditingController textEditingController;
   final AutovalidateMode? autovalidateMode;
@@ -14,7 +14,7 @@ class TextFormWidget extends StatelessWidget {
     return TextFormField(
       controller: textEditingController,
       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-          color: Colors.grey.shade800,
+          color: color??Colors.grey.shade800,
         ),
         autovalidateMode: autovalidateMode,
       decoration:InputDecoration(
@@ -24,7 +24,7 @@ class TextFormWidget extends StatelessWidget {
         border: InputBorder.none,
         hintText: hintText,
         hintStyle: Theme.of(context).textTheme.labelLarge!.copyWith(
-          color: color,
+          color: color??Colors.grey.shade800,
         ),
         errorStyle: Theme.of(context).textTheme.labelLarge!.copyWith(
           color: Colors.yellow
