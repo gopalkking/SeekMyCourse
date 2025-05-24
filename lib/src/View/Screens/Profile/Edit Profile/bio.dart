@@ -74,7 +74,7 @@ class _BioState extends State<Bio> {
                             ),
                           ),
                           8.vspace,
-                         TextFormWidget(
+                         CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             textEditingController: facebook,
@@ -87,7 +87,7 @@ class _BioState extends State<Bio> {
                             ),
                           ),
                          8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             textEditingController: instagram,
@@ -107,7 +107,7 @@ class _BioState extends State<Bio> {
                             ),
                           ),
                         8.vspace,
-                         TextFormWidget(
+                         CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             textEditingController: instagram,
@@ -120,7 +120,7 @@ class _BioState extends State<Bio> {
                             ),
                           ),
                           8.vspace,
-                           TextFormWidget(
+                           CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             textEditingController: linkedin,

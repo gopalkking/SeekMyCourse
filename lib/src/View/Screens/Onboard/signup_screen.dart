@@ -5,8 +5,8 @@ import 'package:seek_my_course/src/View/Routes/route_name.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
+import 'package:seek_my_course/src/View/Widget/onboard_textform_widget.dart';
 import 'package:seek_my_course/src/View/Widget/phone_field_widget.dart';
-import 'package:seek_my_course/src/View/Widget/textformfield_widget.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});

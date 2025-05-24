@@ -66,7 +66,7 @@ class _GenerateCourseState extends State<GenerateCourse> {
             32.vspace,
             Text("Enter Your Topic Name",style: theme.textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.bold),),
             8.vspace,
-            TextFormWidget(hintText: "Type here...", textEditingController: topicName, color:  Colors.grey.shade800, fillColor: Colors.white),
+            CustomTextformWidget(hintText: "Type here...", textEditingController: topicName, color:  Colors.grey.shade800, fillColor: Colors.white),
             SizedBox(height: context.height/14,),
              Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

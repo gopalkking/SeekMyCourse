@@ -67,7 +67,7 @@ class _AddBankDetailsState extends State<AddBankDetails> {
                 children: [
                   8.vspace,
                   Text("Bank Name", style: theme.textTheme.bodyLarge),
-                  TextFormWidget(
+                  CustomTextformWidget(
                     hintText: "e.g. Axis Bank",
                     textEditingController: bankName,
                     color: AppColors.appColors.shade300,
@@ -75,7 +75,7 @@ class _AddBankDetailsState extends State<AddBankDetails> {
                   ),
                   32.vspace,
                   Text("Account Number", style: theme.textTheme.bodyLarge),
-                  TextFormWidget(
+                  CustomTextformWidget(
                     hintText: "e.g. 10416756666464",
                     textEditingController: accountNumber,
                     color: AppColors.appColors.shade300,
@@ -83,7 +83,7 @@ class _AddBankDetailsState extends State<AddBankDetails> {
                   ),
                   32.vspace,
                   Text("IFSC Course", style: theme.textTheme.bodyLarge),
-                  TextFormWidget(
+                  CustomTextformWidget(
                     hintText: "e.g. UTIB0014",
                     textEditingController: ifscCode,
                     color: AppColors.appColors.shade300,
@@ -91,7 +91,7 @@ class _AddBankDetailsState extends State<AddBankDetails> {
                   ),
                   32.vspace,
                   Text("Account Holder", style: theme.textTheme.bodyLarge),
-                  TextFormWidget(
+                  CustomTextformWidget(
                     hintText: "e.g. Vishnu Nair",
                     textEditingController: accountHolder,
                     color: AppColors.appColors.shade300,

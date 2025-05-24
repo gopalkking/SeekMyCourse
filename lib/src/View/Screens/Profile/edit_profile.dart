@@ -62,7 +62,7 @@ class _EditProfileState extends State<EditProfile> with SingleTickerProviderStat
     return Scaffold(
       appBar: CommonAppbarWidget(
         text: "",
-        onPressed: () {},
+        onPressed: () {Get.back();},
         action: [
           Padding(
             padding: const EdgeInsets.only(right: 12),

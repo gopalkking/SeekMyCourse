@@ -17,11 +17,21 @@ import 'package:seek_my_course/src/View/Screens/Generate%20Course/quiz_completed
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/quiz_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Onboard/subscriptions.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/Edit%20Profile/subscription_invoice.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/access_control.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/chating_study_group.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/choose_profile_picture.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/create_study_group.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/enter_email_address.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/my_study_group.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/profile_information.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/study_group_details.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/study_group_profiles.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/add_bank_details.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/bank_detail.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/payout_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/referral_dashboard.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/referral_program.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/Terms%20&%20Conditions/terms_and_conditions_tabs.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/edit_profile.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/notification.dart';
 import 'package:seek_my_course/src/View/Screens/home_screen.dart';
@@ -167,6 +177,66 @@ class AppRoutes {
     GetPage(
       name: Appnames.subscriptionInvoice, 
       page: () =>const SubscriptionInvoice() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.termsOfServiceTabs, 
+      page: () =>const TermsAndConditionsTabs() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.myStudyGroup, 
+      page: () =>const MyStudyGroup() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.createStudyGroup, 
+      page: () =>const CreateStudyGroup() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.chooseProfilePicture, 
+      page: () =>const ChooseProfilePicture() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.accessControl, 
+      page: () =>const AccessControl() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.studyGroupDetails, 
+      page: () =>const StudyGroupDetails() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.profileInformation, 
+      page: () =>const ProfileInformation() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.chatingStudyGroup, 
+      page: () =>const ChatingStudyGroup() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.enterEmailAddress, 
+      page: () =>const EnterEmailAddress() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.studyGroupProfiles, 
+      page: () =>const StudyGroupProfiles() ,
       transitionDuration: const Duration(milliseconds: 250),
       transition: Transition.leftToRightWithFade
       ),

@@ -48,7 +48,7 @@ class LearnsProfileEditDialog extends StatelessWidget {
                             ),
                           ),
                           8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             fillColor: blackColor,
@@ -62,7 +62,7 @@ class LearnsProfileEditDialog extends StatelessWidget {
                             ),
                           ),
                           8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             fillColor: blackColor,
@@ -83,7 +83,7 @@ class LearnsProfileEditDialog extends StatelessWidget {
                             ),
                           ),
                           8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             fillColor: blackColor,
@@ -97,7 +97,7 @@ class LearnsProfileEditDialog extends StatelessWidget {
                             ),
                           ),
                           8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             fillColor: blackColor,
@@ -115,7 +115,7 @@ class LearnsProfileEditDialog extends StatelessWidget {
                 style: theme.textTheme.bodySmall!.copyWith(color: Colors.white),
               ),
               8.vspace,
-              TextFormWidget(
+              CustomTextformWidget(
                 hintText: "",
                 color: Colors.white,
                 fillColor: blackColor,

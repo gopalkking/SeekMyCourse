@@ -7,7 +7,7 @@ class TextFormWidget extends StatelessWidget {
   final TextEditingController textEditingController;
   final AutovalidateMode? autovalidateMode;
    final String? Function(String?)? validator;
-  const TextFormWidget({super.key, required this.hintText, required this.textEditingController, required this.color, required this.fillColor, this.validator, this.autovalidateMode});
+  const TextFormWidget({super.key, required this.hintText, required this.textEditingController, required this.color, required this.fillColor, this.validator, this.autovalidateMode,});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +17,7 @@ class TextFormWidget extends StatelessWidget {
           color: Colors.grey.shade800,
         ),
         autovalidateMode: autovalidateMode,
+       
       decoration:InputDecoration(
          filled: true,
         fillColor: Colors.white,

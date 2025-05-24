@@ -26,6 +26,18 @@ class Appnames {
   static const String notification = '/notification';
   static const String editProfile = '/editProfile';
   static const String subscriptionInvoice = '/subscriptionInvoice';
+  static const String termsOfServiceTabs = '/termsOfServiceTabs';
+  static const String myStudyGroup = '/myStudyGroup';
+  static const String createStudyGroup = '/createStudyGroup';
+  static const String chooseProfilePicture = '/chooseProfilePicture';
+  static const String accessControl = '/accessControl';
+  static const String studyGroupDetails = '/studyGroupDetails';
+  static const String profileInformation = '/profileInformation';
+  static const String chatingStudyGroup = '/chatingStudyGroup';
+  static const String enterEmailAddress = '/enterEmailAddress';
+  static const String studyGroupProfiles = '/studyGroupProfiles';
+
+
 
   
 }

@@ -57,7 +57,7 @@ class _LearnsProfileState extends State<LearnsProfile> {
                             ),
                           ),
                           8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             fillColor: blackColor,
@@ -71,7 +71,7 @@ class _LearnsProfileState extends State<LearnsProfile> {
                             ),
                           ),
                           8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             fillColor: blackColor,
@@ -92,7 +92,7 @@ class _LearnsProfileState extends State<LearnsProfile> {
                             ),
                           ),
                           8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             fillColor: blackColor,
@@ -106,7 +106,7 @@ class _LearnsProfileState extends State<LearnsProfile> {
                             ),
                           ),
                           8.vspace,
-                          TextFormWidget(
+                          CustomTextformWidget(
                             hintText: "",
                             color: Colors.white,
                             fillColor: blackColor,
@@ -124,7 +124,7 @@ class _LearnsProfileState extends State<LearnsProfile> {
                 style: theme.textTheme.bodySmall!.copyWith(color: Colors.white),
               ),
               8.vspace,
-              TextFormWidget(
+              CustomTextformWidget(
                 hintText: "",
                 color: Colors.white,
                 fillColor: blackColor,

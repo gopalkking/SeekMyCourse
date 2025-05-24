@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:seek_my_course/src/View/Routes/route_name.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/pdf_service.dart';
 import 'package:seek_my_course/src/View/Utilies/colors.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
@@ -24,6 +25,7 @@ class _PayoutScreenState extends State<PayoutScreen> {
   int currentPage = 0;
 
   List<int> perPageOptions = [6,10, 15, 20];
+  PdfServices pdfService = PdfServices();
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
@@ -201,7 +203,10 @@ class _PayoutScreenState extends State<PayoutScreen> {
                     height: context.height / 18,
                     color: theme.splashColor,
                     textcolor: Colors.black,
-                    onPressed: () {},
+                    onPressed: () async{
+                          final data = await pdfService.generatePayoutInvoice();
+                          pdfService.savepdfFile("SMC_Payout_invoice", data);
+                    },
                   ),
                   32.vspace
                 ],

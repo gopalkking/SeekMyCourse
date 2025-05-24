@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme:AppTheme.lightTheme,  
       getPages: AppRoutes.appRoutes(),
       defaultTransition: Transition.leftToRightWithFade,
-      home: NavigatorScreen(index: 2),
+      home: NavigatorScreen(index: 0),
     );
   }
 }

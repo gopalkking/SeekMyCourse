@@ -30,4 +30,14 @@ class AppImages{
  static const String morpheusCode = 'assets/images/morpheus_code.png';
  static const String file = 'assets/images/file.png';
  static const String subscription = 'assets/images/subscription.png';
+ static const String totalCourses = 'assets/images/total_courses.png';
+ static const String activeCourses = 'assets/images/active_courses.png';
+ static const String completedCourses = 'assets/images/completed_courses.png';
+ static const String exportedCourses = 'assets/images/exported_courses.png';
+ static const String course = 'assets/images/course.jpg';
+ static const String facebook = 'assets/images/facebook.png';
+ static const String instagram = 'assets/images/instagram.png';
+ static const String x = 'assets/images/x.png';
+ static const String linkedin = 'assets/images/linkedin.png';
+ static const String youtube = 'assets/images/youtube.png';
 }
