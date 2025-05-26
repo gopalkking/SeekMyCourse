@@ -10,6 +10,7 @@ import 'package:seek_my_course/src/View/Widget/Refer_Earn_widgets/payout_text_wi
 import 'package:seek_my_course/src/View/Widget/common_appbar_widget.dart';
 import 'package:seek_my_course/src/View/Widget/common_row_text_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
+import 'package:seek_my_course/src/View/Widget/pagination_widget.dart';
 
 class PayoutScreen extends StatefulWidget {
   const PayoutScreen({super.key});
@@ -214,45 +215,16 @@ class _PayoutScreenState extends State<PayoutScreen> {
             ),
 
             32.vspace,
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-              Text("Items per page",style: theme.textTheme.bodySmall!.copyWith(color: Colors.white),),
-              8.hspace,
-             Container(
-            padding: EdgeInsets.symmetric(horizontal: 8),
-            height: 30,
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.white),
-            ),
-            child: DropdownButton<int>(
-              value: _itemsPerPage,
-              dropdownColor: Colors.black,
-              iconEnabledColor: Colors.white,
-              underline: SizedBox(),
-              style: TextStyle(color: Colors.white),
-              items: perPageOptions.map((int value) {
-                return DropdownMenuItem<int>(
-                  value: value,
-                  child: Text(value.toString()),
-                );
-              }).toList(),
-              onChanged: (newValue) {
+            PaginationWidget(perPage: ' ${'1'} - ${_itemsPerPage.toString().padLeft(2,'0')} of ${30}', onChanged: (newValue) {
                 setState(() {
                   _itemsPerPage = newValue!;
                   currentPage = 0;
                 });
-              },
-            ),
-          ),
-          8.vspace,
-            Text(
-            ' ${'1'} - ${_itemsPerPage.toString().padLeft(2,'0')} of ${30}',
-            style: TextStyle(color: Colors.white),
-          ),
-          InkWell(onTap: (){},child: Icon(Icons.chevron_left, color: Colors.white),),
-          InkWell(onTap: (){Get.toNamed(Appnames.referralProgram);},child: Icon(Icons.chevron_right, color: Colors.white),),
-            ],)
+              }, items: perPageOptions,leftOnPressed: () {
+                
+              },rightOnPressed: () {
+                Get.toNamed(Appnames.referralProgram);
+              },),
           ],
         ),
       ),

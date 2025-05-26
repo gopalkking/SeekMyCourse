@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:seek_my_course/src/View/Screens/navigator_screen.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/commonplan_widget.dart';
@@ -82,7 +83,9 @@ class _SubscriptionPlansState extends State<SubscriptionPlans> {
                       height: 50,
                       color: Color(0xff00D5BE),
                       textcolor: Colors.black,
-                      onPressed: () {},
+                      onPressed: () {
+                       Navigator.push(context, MaterialPageRoute(builder: (context)=> NavigatorScreen(index: 0)));
+                      },
                     ),
                     16.vspace,
                     ListTile(

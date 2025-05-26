@@ -91,8 +91,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: Column(
                       children: [
                       ProfileWidget(text: "Edit Profile",onPressed: (){Get.toNamed(Appnames.editProfile);},),
-                      ProfileWidget(text: "My Course",onPressed: (){},),
-                      ProfileWidget(text: "My Certificate",onPressed: (){},),
+                      ProfileWidget(text: "My Course",onPressed: (){Get.toNamed(Appnames.myCourses);},),
+                      ProfileWidget(text: "My Certificate",onPressed: (){Get.toNamed(Appnames.myCertificate);},),
                       ProfileWidget(text: "My Study Group",onPressed: (){Get.toNamed(Appnames.myStudyGroup);},),
                       ProfileWidget(text: "Refer & Earn",onPressed: (){Get.toNamed(Appnames.referralDashboard);},),
                       ProfileWidget(text: "Help & Support",onPressed: (){},),
@@ -142,7 +142,7 @@ alertBoxLogout(BuildContext context) {
             buttontext: 'Confirm',
             canceltext: 'Cancel',
             onPressed: () {
-              Get.to(Appnames.loginScreen);
+              Get.toNamed(Appnames.loginScreen);
             },
             cancelButton: () {
               Navigator.pop(context);

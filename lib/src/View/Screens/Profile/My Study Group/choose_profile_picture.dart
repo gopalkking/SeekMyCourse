@@ -40,7 +40,7 @@ class _ChooseProfilePictureState extends State<ChooseProfilePicture> {
                   SizedBox(
                     width: 230,
                     child: CustomTextformWidget(hintText: "", textEditingController: fileName, color:  Colors.grey.shade800, fillColor: Colors.white,readOnly: true,)),
-                  CustomButton(onPressed: (){},text: "Choose", width: context.width/3, height: context.height/19, color: theme.splashColor,textcolor: Colors.black,)
+                  CustomButton(onPressed: (){},text: "Choose", width: context.width/3, height: context.height/16.4, color: theme.splashColor,textcolor: Colors.black,)
                 ],
               ),
                SizedBox(height: context.height/14,),

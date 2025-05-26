@@ -14,21 +14,22 @@ class _SplashScreenState extends State<SplashScreen> {
   
   @override
   void initState(){
+     super.initState();
     Future.delayed(Duration(seconds: 2),(){
-     Get.toNamed(Appnames.onboardScreen);
+     Get.offNamed(Appnames.loginScreen);
     });
-    super.initState();
+ 
   }
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: Colors.transparent,
-        image: DecorationImage(
-          image: AssetImage(AppImages.splash),
-          fit: BoxFit.fill)
-      ),
+        decoration: BoxDecoration(
+          color: Colors.transparent,
+          image: DecorationImage(
+            image: AssetImage(AppImages.splash),
+            fit: BoxFit.fill)
+        ),
     );
   }
 }

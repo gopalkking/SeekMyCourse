@@ -6,6 +6,7 @@ import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/common_appbar_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
 import 'package:seek_my_course/src/View/Widget/custom_outline_button.dart';
+import 'package:seek_my_course/src/View/Widget/pagination_widget.dart';
 import 'package:seek_my_course/src/View/Widget/small_row_text_widget.dart';
 import 'package:seek_my_course/src/View/Widget/textformfield_widget.dart';
 
@@ -29,7 +30,7 @@ class _StudyGroupProfilesState extends State<StudyGroupProfiles> {
     return Scaffold(
       appBar: CommonAppbarWidget(
         text: "Study group profiles",
-        onPressed: () {},
+        onPressed: () {Get.back();},
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16),
@@ -133,45 +134,16 @@ class _StudyGroupProfilesState extends State<StudyGroupProfiles> {
                 );
               }
             ), 32.vspace,
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-              Text("Items per page",style: theme.textTheme.bodySmall!.copyWith(color: Colors.white),),
-              8.hspace,
-             Container(
-            padding: EdgeInsets.symmetric(horizontal: 8),
-            height: 30,
-            decoration: BoxDecoration(
-              border: Border.all(color: Colors.white),
-            ),
-            child: DropdownButton<int>(
-              value: _itemsPerPage,
-              dropdownColor: Colors.black,
-              iconEnabledColor: Colors.white,
-              underline: SizedBox(),
-              style: TextStyle(color: Colors.white),
-              items: perPageOptions.map((int value) {
-                return DropdownMenuItem<int>(
-                  value: value,
-                  child: Text(value.toString()),
-                );
-              }).toList(),
-              onChanged: (newValue) {
+             PaginationWidget(perPage: ' ${'1'} - ${_itemsPerPage.toString().padLeft(2,'0')} of ${30}', onChanged: (newValue) {
                 setState(() {
                   _itemsPerPage = newValue!;
                   currentPage = 0;
                 });
-              },
-            ),
-          ),
-          8.vspace,
-            Text(
-            ' ${'1'} - ${_itemsPerPage.toString().padLeft(2,'0')} of ${30}',
-            style: TextStyle(color: Colors.white),
-          ),
-          InkWell(onTap: (){},child: Icon(Icons.chevron_left, color: Colors.white),),
-          InkWell(onTap: (){},child: Icon(Icons.chevron_right, color: Colors.white),),
-            ],)
+              }, items: perPageOptions,leftOnPressed: () {
+                
+              },rightOnPressed: () {
+                          
+              },),
 
           ],
         ),

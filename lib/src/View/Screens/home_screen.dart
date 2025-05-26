@@ -315,7 +315,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          SizedBox(height: 130,width: 120,child: Image.asset(AppImages.course,fit: BoxFit.fill,)),
+                          Image.asset(AppImages.course,height: 130,width: 120,fit: BoxFit.fill,),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [

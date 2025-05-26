@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:seek_my_course/src/View/Routes/route_name.dart';
 import 'package:seek_my_course/src/View/Routes/routes_page.dart';
+import 'package:seek_my_course/src/View/Screens/Onboard/splash_screen.dart';
 import 'package:seek_my_course/src/View/Screens/navigator_screen.dart';
 import 'package:seek_my_course/src/View/Utilies/theme.dart';
 
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme:AppTheme.lightTheme,  
       getPages: AppRoutes.appRoutes(),
       defaultTransition: Transition.leftToRightWithFade,
-      home: NavigatorScreen(index: 0),
+      initialRoute: Appnames.splashScreen,
     );
   }
 }

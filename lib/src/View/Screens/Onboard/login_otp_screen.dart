@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pinput/pinput.dart';
+import 'package:seek_my_course/src/View/Screens/navigator_screen.dart';
 import 'package:seek_my_course/src/View/Utilies/sizedbox_widget.dart';
 import 'package:seek_my_course/src/View/Widget/custom_button.dart';
 
@@ -73,7 +74,11 @@ class _LoginOTPScreenState extends State<LoginOTPScreen> {
                 height: MediaQuery.of(context).size.height / 10,
               ),
               CustomButton(text: 'Submit', width: MediaQuery.of(context).size.width, 
-              height: 50, color: theme.splashColor,onPressed: (){},textcolor: Color(0xff000000),),
+              height: 50, color: theme.splashColor,onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> NavigatorScreen(index: 0)));
+
+              },textcolor: Color(0xff000000),
+              ),
               36.vspace,
              Row(
               mainAxisAlignment: MainAxisAlignment.center,

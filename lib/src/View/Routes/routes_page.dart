@@ -17,6 +17,7 @@ import 'package:seek_my_course/src/View/Screens/Generate%20Course/quiz_completed
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/quiz_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Onboard/subscriptions.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/Edit%20Profile/subscription_invoice.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Certificate/view_certificate.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/access_control.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/chating_study_group.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/My%20Study%20Group/choose_profile_picture.dart';
@@ -33,6 +34,8 @@ import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/referra
 import 'package:seek_my_course/src/View/Screens/Profile/Refer%20&%20Earn/referral_program.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/Terms%20&%20Conditions/terms_and_conditions_tabs.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/edit_profile.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/My%20Certificate/my_certificate.dart';
+import 'package:seek_my_course/src/View/Screens/Profile/my_courses.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/notification.dart';
 import 'package:seek_my_course/src/View/Screens/home_screen.dart';
 
@@ -237,6 +240,24 @@ class AppRoutes {
     GetPage(
       name: Appnames.studyGroupProfiles, 
       page: () =>const StudyGroupProfiles() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.myCourses, 
+      page: () =>const MyCourses() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.myCertificate, 
+      page: () =>const MyCertificate() ,
+      transitionDuration: const Duration(milliseconds: 250),
+      transition: Transition.leftToRightWithFade
+      ),
+    GetPage(
+      name: Appnames.viewCertificate, 
+      page: () =>const ViewCertificate() ,
       transitionDuration: const Duration(milliseconds: 250),
       transition: Transition.leftToRightWithFade
       ),

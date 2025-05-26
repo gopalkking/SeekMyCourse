@@ -40,4 +40,6 @@ class AppImages{
  static const String x = 'assets/images/x.png';
  static const String linkedin = 'assets/images/linkedin.png';
  static const String youtube = 'assets/images/youtube.png';
+ static const String completedBatch = 'assets/images/completed.png';
+
 }

@@ -1,5 +1,5 @@
 class Appnames {
-  static const String rooScreen = '/';
+  static const String rootScreen = '/';
   static const String splashScreen = '/splashScreen';
   static const String onboardScreen = '/onboardScreen';
   static const String loginScreen = '/loginScreen';
@@ -36,6 +36,9 @@ class Appnames {
   static const String chatingStudyGroup = '/chatingStudyGroup';
   static const String enterEmailAddress = '/enterEmailAddress';
   static const String studyGroupProfiles = '/studyGroupProfiles';
+  static const String myCourses = '/myCourses';
+  static const String myCertificate = '/myCertificate';
+  static const String viewCertificate = '/viewCertificate';
 
 
 

@@ -11,12 +11,13 @@ class SmallRowTextWidget extends StatelessWidget {
     ThemeData theme = Theme.of(context);
     return Row(
       mainAxisAlignment: mainAxisAlignment??MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           title,
-          style: theme.textTheme.bodySmall!.copyWith(color: theme.splashColor),
+          style: theme.textTheme.bodyMedium!.copyWith(color: theme.splashColor),
         ),
-        Text(answer, style: theme.textTheme.bodySmall!.copyWith(color: Colors.white)),
+        Expanded(child: Text(answer, style: theme.textTheme.bodyMedium!.copyWith(color: Colors.white), maxLines: 2,)),
       ],
     );
   }
