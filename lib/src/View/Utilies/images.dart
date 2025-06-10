@@ -10,7 +10,36 @@ class AppImages{
  static const String logo = 'assets/images/logo.png';
  static const String group = 'assets/images/group.png';
  static const String robot = 'assets/images/robot.png';
- 
+ static const String aichat = 'assets/images/aichat.png';
+ static const String notepad = 'assets/images/notepad.png';
+ static const String tick= 'assets/images/tick.png';
+ static const String chatIcon= 'assets/images/chatIcon.png';
+ static const String pencil = 'assets/images/pencil.png';
+ static const String won= 'assets/images/won.png';
+ static const String done = 'assets/images/done.png';
+ static const String photo= 'assets/images/photo.png';
+ static const String arrowRight= 'assets/images/arrow_right.png';
+ static const String settings= 'assets/images/settings.png';
+ static const String totalReferrals= 'assets/images/total_referrals.png';
+ static const String totalUsers= 'assets/images/total_Users.png';
+ static const String totalEarnings= 'assets/images/total_earnings.png';
+ static const String pdf= 'assets/images/pdf.png';
+ static const String excel = 'assets/images/excel.png';
+ static const String filter = 'assets/images/filter.png';
+ static const String morpheus = 'assets/images/morpheus.png';
+ static const String morpheusCode = 'assets/images/morpheus_code.png';
+ static const String file = 'assets/images/file.png';
+ static const String subscription = 'assets/images/subscription.png';
+ static const String totalCourses = 'assets/images/total_courses.png';
+ static const String activeCourses = 'assets/images/active_courses.png';
+ static const String completedCourses = 'assets/images/completed_courses.png';
+ static const String exportedCourses = 'assets/images/exported_courses.png';
+ static const String course = 'assets/images/course.jpg';
+ static const String facebook = 'assets/images/facebook.png';
+ static const String instagram = 'assets/images/instagram.png';
+ static const String x = 'assets/images/x.png';
+ static const String linkedin = 'assets/images/linkedin.png';
+ static const String youtube = 'assets/images/youtube.png';
+ static const String completedBatch = 'assets/images/completed.png';
 
- 
 }

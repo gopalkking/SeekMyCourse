@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:seek_my_course/src/View/Screens/Profile/profile_screen.dart';
 import 'package:seek_my_course/src/View/Screens/Generate%20Course/generate_course.dart';
 import 'package:seek_my_course/src/View/Screens/home_screen.dart';
+import 'package:seek_my_course/src/View/Utilies/colors.dart';
 import 'package:seek_my_course/src/View/Utilies/images.dart';
 
 
@@ -22,14 +23,14 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
         height: MediaQuery.of(context).size.height,
             // padding:const EdgeInsets.all(8),
         child: Scaffold(
-          backgroundColor: Colors.transparent,
+          backgroundColor: Color(AppColors.lightBlack),
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Expanded(
                 child:widget.index == 0 ? const HomeScreen() : widget.index == 1 ? const GenerateCourse() :widget.index == 2 ? const ProfileScreen() :const  HomeScreen()),
-             // 8.vspace,
+               // 8.vspace,
                     Divider(
                       thickness: 2,
                       color: Colors.grey.withOpacity(0.55),
@@ -114,8 +115,8 @@ class _NavigatorScreenState extends State<NavigatorScreen> {
                         ],
                       ),
                     )
-            ],
-          ),
+             ],
+           ),
         ),
     );
   }
